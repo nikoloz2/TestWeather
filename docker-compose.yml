@@ -1,0 +1,9 @@
+﻿services:
+    test_weather:
+        build:
+            context: ./
+            dockerfile: TestWeather/Dockerfile
+        image: pariah25/test_weather
+        container_name: test_weather
+        ports:
+            - 5131:80
